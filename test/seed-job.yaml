@@ -1,0 +1,10 @@
+kind: Job
+apiVersion: apps/v1
+metadata:
+  name: seed-job-v44
+spec:
+  template:
+    spec:
+      containers:
+        - name: seed
+          image: tomo0726/keyaki2023-test-seed:latest
