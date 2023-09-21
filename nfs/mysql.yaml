@@ -9,5 +9,8 @@ spec:
   router:
     instances: 1
   datadirVolumeClaimTemplate:
-    accessModes:
-      - ReadWriteMany
+  storageClassName: nfs-csi
+  accessModes: [ReadWriteOnce]
+  resources:
+    requests:
+      storage: 5Gi
