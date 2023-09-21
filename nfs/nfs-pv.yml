@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  # 任意の PV 名
+  name: nfs-pv
+spec:
+  capacity:
+    # ストレージのサイズ
+    storage: 10Gi
+  accessModes:
+    # アクセスモード:
+    # - ReadWriteMany (複数ノード RW)
+    # - ReadWriteOnce (単一ノード RW)
+    # - ReadOnlyMany (複数ノード R)
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy:
+    # Pod が終了した後もデータを残す
+    Retain
+  storageClassName: nfs-server
+  nfs:
+    # NFS サーバーの定義
+    path: /volume1/kubernetes
+    server: 192.168.100.3
+    readOnly: false
