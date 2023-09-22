@@ -17,5 +17,3 @@ spec:
           image: tomo0726/keyaki2023-test-app:latest
           ports:
             - containerPort: 80
-  hostNetwork: true
-  dnsPolicy: ClusterFirstWithHostNet
