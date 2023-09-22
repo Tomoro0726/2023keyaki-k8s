@@ -1,0 +1,21 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: app-deployment
+spec:
+  selector:
+    matchLabels:
+      server: app
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        server: app
+    spec:
+      containers:
+        - name: app
+          image: tomo0726/keyaki2023-test-app:latest
+          ports:
+            - containerPort: 80
+  hostNetwork: true
+  dnsPolicy: ClusterFirstWithHostNet
