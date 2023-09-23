@@ -17,4 +17,3 @@ spec:
           image: tomo0726/keyaki2023-test-api:latest
           ports:
             - containerPort: 80
-            - containerPort: 3306
