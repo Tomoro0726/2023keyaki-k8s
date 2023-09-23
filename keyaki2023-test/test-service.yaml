@@ -4,4 +4,4 @@ metadata:
   name: test-service
 spec:
   type: ExternalName
-  externalName: 192.168.100.70
+  externalName: google.com
