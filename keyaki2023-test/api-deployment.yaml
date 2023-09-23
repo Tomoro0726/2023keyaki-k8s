@@ -3,6 +3,8 @@ apiVersion: apps/v1
 metadata:
   name: api-deployment-v21
 spec:
+  hostNetwork: true
+  dnsPolicy: ClusterFirstWithHostNet
   selector:
     matchLabels:
       server: api
