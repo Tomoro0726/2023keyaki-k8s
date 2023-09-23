@@ -5,3 +5,6 @@ metadata:
 spec:
   type: ExternalName
   externalName: 192.168.100.75
+  ports:
+    - port: 3306
+      protocol: TCP
