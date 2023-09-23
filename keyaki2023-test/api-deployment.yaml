@@ -18,5 +18,3 @@ spec:
           ports:
             - containerPort: 80
             - containerPort: 3306
-      hostNetwork: true
-      dnsPolicy: ClusterFirstWithHostNet
