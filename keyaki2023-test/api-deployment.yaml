@@ -27,13 +27,3 @@ spec:
           image: tomo0726/keyaki2023-test-api:latest
           ports:
             - containerPort: 80
-          resources:
-          # requests : pod 作成時に必要とするリソースを設定
-          requests:
-            # 250m : 0.25 CPU
-            cpu: 250m
-            memory: 64Mi
-          # 使用可能なリソースの上限を設定
-          limits:
-            cpu: 500m
-            memory: 128Mi
