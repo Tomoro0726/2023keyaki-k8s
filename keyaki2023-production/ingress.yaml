@@ -1,22 +1,15 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: keyaki2023-ingress
-  annotations:
-    cert-manager.io/cluster-issuer: lets-encrypt
+  name: http-ingress
 spec:
-  tls:
-    - hosts:
-        - hiroogakuen.net
-      secretName: microbot-ingress-tls
   rules:
-    - host: hiroogakuen.net
-      http:
+    - http:
         paths:
-          - backend:
+          - path: /
+            pathType: Prefix
+            backend:
               service:
                 name: nginx-service
                 port:
                   number: 80
-            path: /
-            pathType: Prefix
