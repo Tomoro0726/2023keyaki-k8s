@@ -12,15 +12,18 @@ spec:
       labels:
         server: api
     spec:
+      initContainers:
+        - name: init01
+          image: tomo0726/keyaki2023-production-seed:latest
       containers:
         - name: api
           image: tomo0726/keyaki2023-production-api:latest
           resources:
             requests:
-              cpu: 500m
-              memory: 128Mi
+              cpu: 250m
+              memory: 64Mi
             limits:
-              cpu: 3000m
+              cpu: 750m
               memory: 512Mi
           ports:
             - containerPort: 80
