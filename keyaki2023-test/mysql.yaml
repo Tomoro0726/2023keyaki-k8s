@@ -4,7 +4,4 @@ metadata:
   name: mysql-service
 spec:
   type: ExternalName
-  externalName: tk2-405-43756.vs.sakura.ne.jp
-  ports:
-    - port: 5001
-      protocol: TCP
+  externalName: tk2-216-17817.vs.sakura.ne.jp
