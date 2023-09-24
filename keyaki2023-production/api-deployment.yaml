@@ -1,7 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: api-deployment-v6
+  name: api-deployment-v7
 spec:
   selector:
     matchLabels:
