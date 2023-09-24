@@ -6,7 +6,13 @@ spec:
   selector:
     matchLabels:
       server: api
-  replicas: 3
+  minReplicas: 3
+  maxReplicas: 10
+  metrics:
+    - type: Resource
+      resource:
+        name: memory
+        targetAverageUtilization: 50
   template:
     metadata:
       labels:
