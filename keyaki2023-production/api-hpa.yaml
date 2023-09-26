@@ -8,7 +8,7 @@ spec:
     kind: Deployment
     name: api-deployment-v25
   minReplicas: 3
-  maxReplicas: 6
+  maxReplicas: 5
   metrics:
     - type: Resource
       resource:
