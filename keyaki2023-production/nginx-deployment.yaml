@@ -1,7 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: nginx-deployment-v27
+  name: nginx-deployment-v28
 spec:
   selector:
     matchLabels:
