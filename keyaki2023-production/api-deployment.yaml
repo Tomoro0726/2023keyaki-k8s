@@ -20,10 +20,10 @@ spec:
           image: tomo0726/keyaki2023-production-api:latest
           resources:
             requests:
-              cpu: 500m
-              memory: 128Mi
+              cpu: 900m
+              memory: 512Mi
             limits:
               cpu: 1000m
-              memory: 512Mi
+              memory: 600Mi
           ports:
             - containerPort: 80
