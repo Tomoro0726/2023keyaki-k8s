@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       server: api
-  replicas: 10
+  replicas: 14
   template:
     metadata:
       labels:
