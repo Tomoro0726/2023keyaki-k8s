@@ -17,7 +17,7 @@ spec:
           image: tomo0726/keyaki2023-production-app:latest
           resources:
             requests:
-              cpu: 500m
+              cpu: 300m
               memory: 256Mi
             limits:
               cpu: 1000m
