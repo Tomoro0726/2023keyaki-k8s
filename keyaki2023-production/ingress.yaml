@@ -4,7 +4,7 @@ metadata:
   name: ingress
 spec:
   selector:
-    name: nginx-service
+    name: nginx-deployment-v37
   type: LoadBalancer
   # loadBalancerIP is optional. MetalLB will automatically allocate an IP
   # from its pool if not specified. You can also specify one manually.
