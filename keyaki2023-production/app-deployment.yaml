@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       server: app
-  replicas: 4
+  replicas: 6
   template:
     metadata:
       labels:
@@ -17,8 +17,8 @@ spec:
           image: tomo0726/keyaki2023-production-app:latest
           resources:
             requests:
-              cpu: 250m
-              memory: 64Mi
+              cpu: 500m
+              memory: 256Mi
             limits:
               cpu: 1000m
               memory: 512Mi
