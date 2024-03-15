@@ -4,4 +4,4 @@ metadata:
   name: mysql-service
 spec:
   type: ExternalName
-  externalName: tk2-405-43756.vs.sakura.ne.jp
+  externalName: saitoweb.tokyo
